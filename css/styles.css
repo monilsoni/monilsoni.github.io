@@ -1,0 +1,151 @@
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    color: #40514e;
+}
+
+h1 {
+    margin: 50px auto 0px auto;
+    font-family: "Sacramento", cursive;
+    font-size: 5.625rem;
+    color: #66bfbf;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    color: #66bfbf;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    color: #11999e;
+}
+
+.top-container {
+    background-color: #eaf6f6;
+    padding-top: 100px;
+    position: relative;
+    /* This is added to position the clouds relative to this element. 
+    When absolute is added to the clouds, it positions them relative to the nearest styled element. 
+    However, since if there was no relative positioning here, there would be no nearest styled element, 
+    the clouds would have been positioned relative to the body. Which is why the bottom offset was not working
+    because there is no end to the web-page.*/
+}
+
+.bottom-container {
+    padding: 40px;
+    background-color: #66bfbf;
+    line-height: 2;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 300px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    bottom: 300px;
+    left: 250px;
+}
+
+a {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eaf6f6;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+.coding-gif {
+    width: 25%;
+    border: none;
+    float: left;
+    margin-right: 30px;
+}
+
+.sketching-gif {
+    width: 25%;
+    border: none;
+    float: right;
+    margin-left: 30px;
+}
+
+.profile {
+    margin: 75px auto;
+}
+
+.skills {
+    margin: 75px auto;
+}
+
+.contact-me {
+    margin: 75px auto;
+    width: 40%;
+}
+
+hr {
+    border-style: dotted none none;
+    border-width: 5px;
+    width: 4%;
+    border-color: lightgrey;
+}
+
+.copyright {
+    color: #eaf6f6;
+    margin: 25px auto 0px;
+    font-size: smaller;
+}
+
+.footer-link {
+    margin: 20px;
+}
+
+.BUTTON_DOQ {
+    margin-top: 40px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 12px;
+    background-color: #66bfbf;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.BUTTON_DOQ:hover {
+    background: #11999e;
+    border: solid #337fed 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.about-me {
+    width: 30%;
+    margin: auto;
+}
+
+p {
+    line-height: 2;
+}
+
+.pro {
+    font-weight: lighter;
+    font-size: xx-large;
+}
