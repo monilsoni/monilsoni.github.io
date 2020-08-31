@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Monil's Website</title>
 
     <link rel="stylesheet" type="text/css" href="css/landing-page.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
     <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
     <meta http-equiv="cache-control" content="max-age=0" />
@@ -13,25 +30,43 @@
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
 </head>
+
 <body>
-    <div class="header">
-        <div class="nav-bar">
-            <a class="nav-link" href="#" onclick="navigateToSection(this.innerText); return false;">Home</a>
-            <a class="nav-link" href="#" onclick="navigateToSection(this.innerText); return false;">About Me</a>
-            <a class="nav-link" href="#" onclick="navigateToSection(this.innerText); return false;">Work</a>
-            <a class="nav-link" href="#" onclick="navigateToSection(this.innerText); return false;">Contact Me</a>
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light justify-content-center" role="navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Me</a>
+                </li>
+            </ul>
         </div>
-        <div class="content">
-            <h1>I'm Monil</h1>
-            <h2>A Software Dev Engineer</h2> 
-        </div>
+    </nav>
+    <div class="heading text-center"></div>
+    <div class="content">
+        <h1>I'm Monil</h1>
+        <h2>A Software Dev Engineer</h2>
+    </div>
     </div>
     <div id="about-me" class="section dark-blue">
         <div class="content">
             <img src="images/monil.png" alt="My Profile Picture" />
             <h2>Hello!</h2>
             <p class="text">
-                I'm a software dev engineer at Amazon, India. I love watching movies and T.V. series. I also like sketching, reading, and (sometimes) writing. I also like talking about minimalism and productivity.
+                I'm a software dev engineer at Amazon, India. I love watching movies and T.V. series. I also like
+                sketching, reading, and (sometimes) writing. I also like talking about minimalism and productivity.
             </p>
         </div>
     </div>
@@ -39,7 +74,11 @@
         <div class="content">
             <h2>Projects</h2>
             <p class="text">
-                I am familiar with web development, as well as android development. You can check out <a class="link" href="https://github.com/monilSoni">my GitHub profile</a> and <a class="link" href="https://drive.google.com/file/d/1yGWxtctbBk3ObBaHaXNN9x3RTxpMtxbS/view?usp=sharing">my resume</a>. I am a casual Vim user - that is I prefer using Vim keybindings in whatever IDE I use but, I am not yet at the stage where I can make Vim my IDE (someday, hopefully).
+                I am familiar with web development, as well as android development. You can check out <a class="link"
+                    href="https://github.com/monilSoni">my GitHub profile</a> and <a class="link"
+                    href="https://drive.google.com/file/d/1yGWxtctbBk3ObBaHaXNN9x3RTxpMtxbS/view?usp=sharing">my
+                    resume</a>. I am a casual Vim user - that is I prefer using Vim keybindings in whatever IDE I use
+                but, I am not yet at the stage where I can make Vim my IDE (someday, hopefully).
             </p>
         </div>
     </div>
@@ -47,7 +86,8 @@
         <div class="content">
             <h2>Contact Me</h2>
             <p class="text">
-                Is there something I can help you with? Or do you want to just chat over a cup of coffee? Please feel free to reach out :)
+                Is there something I can help you with? Or do you want to just chat over a cup of coffee? Please feel
+                free to reach out :)
             </p>
             <a href="mailto:monilsoni99@gmail.com">Message Me!</a>
         </div>
@@ -66,7 +106,7 @@
             let url = window.location.href;
             // trim the url
             url = url.substring(0, url.indexOf('#') === -1 ? url.length : url.indexOf('#'));
-            switch(section) {
+            switch (section) {
                 case 'Home':
                     break;
 
@@ -89,5 +129,6 @@
             window.open(url, "_self");
         }
     </script>
-    </body>
+</body>
+
 </html>
