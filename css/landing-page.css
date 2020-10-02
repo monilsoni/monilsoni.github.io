@@ -19,6 +19,7 @@ h2 {
 
 p {
   margin: 0 auto 30px;
+  min-width: 250px;
   width: 35%;
 }
 
