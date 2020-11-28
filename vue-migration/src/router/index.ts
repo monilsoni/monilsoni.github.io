@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
+import LandingPage from "../views/LandingPage";
 
 Vue.use(VueRouter);
 
@@ -8,7 +8,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: LandingPage
   },
   {
     path: "/about",
@@ -20,9 +20,14 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path: "/myhome",
-    name: "My Home",
-    component: () => import("../views/LandingPage.vue")
+    path: "/work",
+    name: "Work",
+    component: () => import("../views/Work.vue")
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: () => import("../views/Contact.vue")
   }
 ];
 

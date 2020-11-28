@@ -1,10 +1,23 @@
 <template>
-  <div class="container-fluid">
-    <div class="row heading heading-color-scheme text-center">
-      <div class="col" style="margin: auto;">
-        <h1>I'm Monil</h1>
-        <h2>A Software Development Engineer</h2>
-      </div>
-    </div>
-  </div>
+<div>
+    <Heading />
+    <Main />
+    <Footer />
+</div>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import Heading from "@/components/Heading.vue";
+import Main from "@/components/Main.vue";
+import Footer from "@/components/Footer.vue";
+
+@Component({
+  components: {
+    Heading,
+    Main,
+    Footer
+  }
+})
+export default class LandingPage extends Vue {}
+</script>
