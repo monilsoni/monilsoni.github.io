@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-3dde3dc8"],{9893:function(t,e,n){},b5bd:function(t,e,n){"use strict";n("9893")},b8fa:function(t,e,n){"use strict";n.r(e);var c=function(){var t=this,e=t.$createElement;t._self._c;return t._m(0)},a=[function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"about"},[n("h1",[t._v("This is a contact me page")])])}],s=(n("b5bd"),n("2877")),i={},u=Object(s["a"])(i,c,a,!1,null,"c7ab6694",null);e["default"]=u.exports}}]);
+//# sourceMappingURL=chunk-3dde3dc8.41a523d9.js.map
