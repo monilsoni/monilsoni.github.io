@@ -1,12 +1,27 @@
+/* Defining root color scheme so that it can be changed via a function if required */
+:root {
+  /* Fonts */
+  --body-font: "Montserrat", sans-serif;
+  --heading-font: "Bebas Neue", cursive;
+
+  /* Colors */
+  --bg-color: #3b4252;
+  --nav-bg-color: #2e3440;
+  --footer-bg-color: #4c566a;
+  --text-color: #f4f7f7;
+}
+
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 h1 {
   font-weight: bold;
   font-size: 80px;
   text-transform: uppercase;
-  font-family: "Bebas Neue", cursive;
+  font-family: var(--heading-font);
 }
 
 h2 {
@@ -14,7 +29,7 @@ h2 {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  font-family: "Bebas Neue", cursive;
+  font-family: var(--heading-font);
 }
 
 p {
@@ -26,8 +41,16 @@ p {
 /* navbar */
 
 .navbar {
-  background-color: #34495e;
-  color: #f4f7f7;
+  background-color: var(--nav-bg-color);
+  color: var(--text-color);
+}
+
+.dropdown-menu {
+  background-color: var(--nav-bg-color);
+}
+
+.dropdown-item {
+  color: var(--text-color);
 }
 
 .navbar-toggler-icon {
@@ -51,32 +74,20 @@ p {
 /* heading */
 
 .heading {
-  min-height: 600px;
-  background-color: #34495e;
-  color: #f4f7f7;
+  min-height: 500px;
 }
 
 /* sections */
 
 .section {
-  color: #212d3b;
   padding: 50px;
-  min-height: 600px;
-}
-
-.section.dark-blue {
-  background-color: #5da0a2;
-}
-
-.section.light-blue {
-  background-color: #aacfd0;
+  min-height: 400px;
 }
 
 /* footer */
 
 .footer {
-  background-color: #f4f7f7;
-  color: #212d3b;
+  background-color: var(--footer-bg-color);
   min-height: 400px;
 }
 
@@ -88,18 +99,16 @@ p {
 /* hyper-link behavior */
 
 a {
-  color: #212d3b;
+  color: #e5e9f0;
   text-decoration-line: underline;
   text-decoration-style: dotted;
 }
 
 .navbar-nav a {
-  color: #f4f7f7;
   text-decoration: none;
 }
 
 .navbar-nav a:hover {
-  color: #f4f7f7;
   text-decoration: underline;
 }
 
@@ -108,10 +117,6 @@ a {
 }
 
 a:hover {
-  color: #f4f7f7;
+  color: #88c0d0;
   text-decoration: none;
-}
-
-.footer a:hover {
-  color: #5da0a2;
 }
